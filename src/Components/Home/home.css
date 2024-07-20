@@ -1,0 +1,19 @@
+.home {
+    background-color: rgb(251, 195, 122);
+}
+
+.content>p {
+    font-size: 24px;
+    margin-top: 60px;
+    margin-left: 100px;
+    font-family: 'Preahvihear';
+}
+
+.shop_btn {
+    margin-left:98px;
+}
+.grocery_img{
+    width: 400px;
+    height: auto;
+}
+

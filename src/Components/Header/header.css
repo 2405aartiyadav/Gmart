@@ -1,0 +1,22 @@
+
+.navbar-nav{
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.navbar-brand{
+    margin-left:80px;
+}
+
+.shopicon{
+    margin-right:80px;
+     margin-left:80px;
+}
+
+li{
+    font-size: 20px;
+} 
+
+.cart_img{
+    width: 48px;
+}
