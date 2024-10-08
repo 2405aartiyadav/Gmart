@@ -24,7 +24,7 @@ function Header() {
                         alt="shop icon"
                         width="33px"
                         height="33px" />
-                    Mini Gmart
+                    Gmart
                 </Link>
                 <Link
                     to="/shop"

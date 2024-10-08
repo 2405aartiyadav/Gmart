@@ -3,17 +3,22 @@
 }
 
 .content>p {
-    font-size: 24px;
+    font-size: 30px;
     margin-top: 60px;
-    margin-left: 100px;
+    margin-left: 95px;
     font-family: 'Preahvihear';
 }
 
 .shop_btn {
-    margin-left:98px;
+    margin-left:50px;
+text-decoration: none;
+}
+.shop_btn a{
+text-decoration: none;
+color:azure;
 }
 .grocery_img{
-    width: 400px;
+    width: 600px;
     height: auto;
 }
 

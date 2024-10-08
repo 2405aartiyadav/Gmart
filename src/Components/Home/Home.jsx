@@ -12,7 +12,11 @@ function Home() {
         <div className="content col-6">
           <p>One place for all your<br />groceries!</p>
           <div className="shop_btn">
-            <button className=" btn-secondary btn-sm btn btn-success" type='button'>  <Link to="/shop">Shop Now</Link> </button>
+            <button className=" btn-secondary btn-sm btn btn-success shop_btn " type='button'>
+              <Link to="/shop">
+                Shop Now
+              </Link>
+            </button>
           </div>
         </div>
         <div className="img col">
