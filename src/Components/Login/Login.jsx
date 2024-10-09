@@ -8,6 +8,8 @@ import axios from "axios";
 import toast from "react-hot-toast";
 
 function Login() {
+  const baseUri = import.meta.env.VITE_API_BASE_URL;
+
   const { logIn, logedInUser, setLogedInUser } = useContext(AuthContext);
   const {
     register,
@@ -23,7 +25,7 @@ function Login() {
 
   let checkUserLogin = (data) => {
     axios
-      .post("http://localhost:8080/login", {
+      .post(`${baseUri}/login`, {
         username: data.uname,
         password: data.upass,
       })

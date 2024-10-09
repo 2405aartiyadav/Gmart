@@ -9,12 +9,14 @@ import ProductFilter from '../ProductFilter/ProductFilter.jsx';
 
 
 function Shop() {
+  const baseUri = import.meta.env.VITE_API_BASE_URL;
+
   const { logedInUser } = useContext(AuthContext);
   const { searchInput, setSearchInput } = useContext(ProductContext);
   const [vegetables, setVegetables] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:8080/getVegeDetails').then((resp) => {
+    axios.get(`${baseUri}/getVegeDetails`).then((resp) => {
       setVegetables(resp.data)
       console.log(resp.data);
     }).catch((err) => {

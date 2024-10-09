@@ -6,10 +6,7 @@ import { AddProductService } from '../../services/AddProductService.js';
 
 function Add() {
     const { register, handleSubmit, formState: { errors }, reset } = useForm();
-    // const AddProductService = (data) => {
-    // axios.post("http://localhost:8080/addVegetables")
-    // };
-
+   
     return (
         <div id='add'>
             <form

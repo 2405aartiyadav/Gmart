@@ -1,13 +1,15 @@
 import axios from "axios";
 const AddProductService = (data) => {
+  const baseUri = import.meta.env.VITE_API_BASE_URL;
+
     let type = data.productType;
     let url = "";
     switch (type) {
         case 'vegetable':
-            url = "http://localhost:8080/addVegetables";
+            url = `${baseUri}/addVegetables`;
             break;
         case 'fruit':
-            url = "http://localhost:8080/addFruit";
+            url = `${baseUri}/addFruit`;
             break;
         default:
             break;
