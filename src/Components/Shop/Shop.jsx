@@ -46,6 +46,7 @@ function Shop() {
                 productId={veg.productId}
                 productImageName={veg.productImageName}
                 productName={veg.productName}
+                productImageUrl={veg.productImageUrl}
                 productQuantityType={veg.productQuantityType}
                 productDiscountedPrice={veg.productDiscountedPrice}
                 productActualPrice={veg.productActualPrice}

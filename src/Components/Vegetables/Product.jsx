@@ -11,7 +11,6 @@ import { Link } from 'react-router-dom';
 
 
 function Product(props) {
-  let img_path = "/src/Components/Vegetables/Vegetables/";
   const [selectedProduct, setSelectedProduct] = useState('250');
   const { addItemToCart, wishlistItem } = useContext(ProductContext);
 
@@ -54,7 +53,7 @@ function Product(props) {
 
     <div className='card-container' id='vegetable'>
       <div className="card main" >
-        <img src={img_path + props.productImageName} className="card-img-top veges_img" alt="..." />
+        <img src={props.productImageUrl} className="card-img-top veges_img" alt="..." />
         <div className="card-body">
           <h5 className="card-title">{props.productName}</h5>
           <p className="card-text">₹{props.productDiscountedPrice}/{props.productQuantityType}<small> <del>{props.productActualPrice}/{props.productQuantityType}</del> </small></p>
