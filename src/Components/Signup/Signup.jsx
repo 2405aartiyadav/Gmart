@@ -3,7 +3,7 @@ import login2 from "../../assets/login2.png";
 import "./signup.css";
 import { useForm } from "react-hook-form";
 import axios from "axios";
-import { Navigate } from "react-router-dom";
+import { Link, Navigate } from "react-router-dom";
 import toast from "react-hot-toast";
 function Signup() {
   const baseUri = import.meta.env.VITE_API_BASE_URL;
@@ -98,7 +98,7 @@ function Signup() {
           <button className="btn btn-primary">Sign Up</button>
           <br />
           <span>Already have an account?</span>
-          <a href="#login">Login</a>
+          <Link to="/login">Login</Link>
         </form>
       </div>
     </div>

@@ -57,10 +57,9 @@ function Product(props) {
         <div className="card-body">
           <h5 className="card-title">{props.productName}</h5>
           <p className="card-text">₹{props.productDiscountedPrice}/{props.productQuantityType}<small> <del>{props.productActualPrice}/{props.productQuantityType}</del> </small></p>
-        </div>0
-
+        </div>
         <div className="card-body">
-          <p>Qty :</p>
+          <span>Qty : </span>
           <select name="" id="" value={selectedProduct} onChange={(event) => { selectproduct(event) }}>
             <option value="250">250 gm</option>
             <option value="500">500 gm</option>
@@ -68,12 +67,12 @@ function Product(props) {
             <option value="2000">2 kg</option>
           </select>
         </div>
-        <span className="card-footer">
-        <Link>
+        <span className="card-footer row">
+        <Link className='col'>
           <input className="btn btn-primary btn-sm" type="button" value="Add" onClick={() => { handleAddBtn(props) }} />
            </Link>
           <Link
-            className="nav-link active"
+            className="nav-link active col margin-top:2.5rem"
             to="/wishlist"
             onClick={() => { handleLikedBtn(props) }}>
             <img
