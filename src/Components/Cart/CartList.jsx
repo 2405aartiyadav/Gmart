@@ -25,8 +25,9 @@ function CartList() {
                 <th scope="row">{selectItemInCart.indexOf(prod) + 1}</th>
                 <td>{prod.id}</td>
                 <td>{prod.name}</td>
-                <td>{prod.quantity}2</td>
-                <td>{prod.totalPrice}3</td>
+                <td>{prod.quantity}</td>
+                <td>{prod.quantityType}</td>
+                <td>{prod.totalPrice}</td>
               </tr>
             )
           })}

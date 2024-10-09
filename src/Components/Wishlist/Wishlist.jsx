@@ -12,7 +12,6 @@ function Whishlist(props) {
         <thead>
           <tr>
             <th scope="col">Sno.</th>
-            <th scope="col">id</th>
             <th scope="col">Name</th>
            
           </tr>
@@ -23,7 +22,6 @@ function Whishlist(props) {
             return (
               <tr>
                 <th scope="row">{wishlistCount.indexOf(prod) + 1}</th>
-                <td>{prod.id}</td>
                 <td>{prod.name}</td>
               </tr>
             )
