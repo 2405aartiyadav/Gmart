@@ -35,7 +35,7 @@ function Shop() {
 
       <div>
 
-        {!logedInUser && <Navigate to="/login" replace={true} />}
+        {/* {!logedInUser && <Navigate to="/login" replace={true} />} */}
         <div className="row" id='shop'>
           {filterItem.map((veg) => {
             return (
